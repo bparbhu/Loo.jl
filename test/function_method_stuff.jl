@@ -1,5 +1,6 @@
 using Distributions
 using DataFrames
+using Loo
 
 N = 50; K = 10; S = 100; a0 = 3; b0 = 2
 p = rand(Beta(a0, b0))
