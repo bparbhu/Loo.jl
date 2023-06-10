@@ -1,4 +1,5 @@
 using Test
+using Loo
 
 LLarr = example_loglik_array()
 LLmat = example_loglik_matrix()
@@ -52,7 +53,7 @@ LLmat = example_loglik_matrix()
         @test nlist_val == nlist_ans
         @test nlist(a = 1, b = 2, c = 3) == Dict("a" => 1, "b" => 2, "c" => 3)
     end
-    
+
     @testset "loo_cores works" begin
         @test loo_cores(10) == 10
         ENV["mc.cores"] = 2
