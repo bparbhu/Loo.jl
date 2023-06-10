@@ -1,4 +1,5 @@
 using Test
+using Loo
 
 LLarr = example_loglik_array()
 LLmat = example_loglik_matrix()
