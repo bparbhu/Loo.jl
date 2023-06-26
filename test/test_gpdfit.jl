@@ -1,5 +1,6 @@
 using Test
 using Random
+using Loo
 
 @testset "gpdfit returns correct result" begin
     Random.seed!(123)
